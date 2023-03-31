@@ -11,6 +11,7 @@ Assessment Requirements
 // create a variable to hold your NFT's
 let NFTs = []
 
+
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
@@ -24,7 +25,6 @@ function mintNFT1 (_name, _colorway, _orientation, _chain, _unitPrice) {
 
     }
     NFTs.push(NFT1)
-    console.log("Name: " + NFT1.Name)
     }
 
 function mintNFT2 (_name, _colorway, _orientation, _chain, _unitPrice) {
@@ -36,7 +36,6 @@ function mintNFT2 (_name, _colorway, _orientation, _chain, _unitPrice) {
             "ETH": _unitPrice
         }
     NFTs.push(NFT2)
-    console.log("Name: " + NFT2.Name)
     }
 
 function mintNFT3 (_name, _colorway, _orientation, _chain, _unitPrice) {
@@ -48,10 +47,8 @@ function mintNFT3 (_name, _colorway, _orientation, _chain, _unitPrice) {
             "ETH": _unitPrice
         }
     NFTs.push(NFT3)
-    console.log("Name: " + NFT3.Name)
     }
 
-        
 function mintNFT4 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT4 = {
             "Name": _name,
@@ -61,7 +58,6 @@ function mintNFT4 (_name, _colorway, _orientation, _chain, _unitPrice) {
             "ETH": _unitPrice
         }
     NFTs.push(NFT4)
-    console.log("Name: " + NFT4.Name)
     }
 
 function mintNFT5 (_name, _colorway, _orientation, _chain, _unitPrice) {
@@ -73,14 +69,17 @@ function mintNFT5 (_name, _colorway, _orientation, _chain, _unitPrice) {
             "ETH": _unitPrice
         }
     NFTs.push(NFT5)
-    console.log("Name: " + NFT5.Name)
     }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
     for (let i = 0; i < NFTs.length; i++) {
-        console.log(NFTs[i]);
+        console.log("\nName: " + NFTs[i].Name);
+        console.log("\nColorway: " + NFTs[i].Colorway);
+        console.log("Orientation: " + NFTs[i].Orientation);
+        console.log("Chain: " + NFTs[i].Chain);
+        console.log("ETH: " + NFTs[i].ETH);
 }
 }
 
@@ -90,10 +89,10 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNFT1("SpongeBob", "Yellow & Brown", "Vertical", "Ethereum", 0.005)
-mintNFT2("Patrick", "Pink & Green", "Vertical", "Ethereum", 0.005)
-mintNFT3("Squidward", "Blue & Brown", "Vertical", "Ethereum", 0.005)
-mintNFT4("Mr. Krabs", "Red & Blue", "Vertical", "Ethereum", 0.005)
-mintNFT5("Plankton", "Green & Yellow", "Vertical", "Ethereum", 0.005)
+mintNFT1("SpongeBob", "Yellow & Brown", "Vertical", "Ethereum", 0.005);
+mintNFT2("Patrick", "Pink & Green", "Vertical", "Ethereum", 0.005);
+mintNFT3("Squidward", "Blue & Brown", "Vertical", "Ethereum", 0.005);
+mintNFT4("Mr. Krabs", "Red & Blue", "Vertical", "Ethereum", 0.005);
+mintNFT5("Plankton", "Green & Yellow", "Vertical", "Ethereum", 0.005);
 listNFTs()
 getTotalSupply()
