@@ -74,7 +74,7 @@ function mintNFT5 (_name, _colorway, _orientation, _chain, _unitPrice) {
 // and print their metadata with console.log()
 function listNFTs () {
     for (let i = 0; i < NFTs.length; i++) {
-        console.log("\nName: " + NFTs[i].Name)
+        console.log("\n\nName: " + NFTs[i].Name)
         console.log("\nColorway: " + NFTs[i].Colorway)
         console.log("Orientation: " + NFTs[i].Orientation)
         console.log("Chain: " + NFTs[i].Chain)
