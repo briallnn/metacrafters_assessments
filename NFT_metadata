@@ -17,56 +17,55 @@ let NFTs = []
 // and store it in the variable above.
 function mintNFT1 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT1 = {
-            "Name": _name,
-            "Colorway": _colorway,
-            "Orientation": _orientation,
-            "Chain": _chain,
-            "ETH": _unitPrice
-
+            "Name": "Spongebob",
+            "Colorway": "Yellow & Brown",
+            "Orientation": "Vertical",
+            "Chain":  "Ethereum",
+            "ETH": 0.005
     }
     NFTs.push(NFT1)
     }
 
 function mintNFT2 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT2 = {
-            "Name": _name,
-            "Colorway": _colorway,
-            "Orientation": _orientation,
-            "Chain": _chain,
-            "ETH": _unitPrice
+            "Name": "Patrick",
+            "Colorway": "Pink & Green",
+            "Orientation": "Vertical",
+            "Chain": "Ethereum",
+            "ETH": 0.005
         }
     NFTs.push(NFT2)
     }
 
 function mintNFT3 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT3 = {
-            "Name": _name,
-            "Colorway": _colorway,
-            "Orientation": _orientation,
-            "Chain": _chain,
-            "ETH": _unitPrice
+            "Name": "Squiward",
+            "Colorway": "Blue & Brown",
+            "Orientation": "Vertical",
+            "Chain": "Ethereum",
+            "ETH": 0.005
         }
     NFTs.push(NFT3)
     }
 
 function mintNFT4 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT4 = {
-            "Name": _name,
-            "Colorway": _colorway,
-            "Orientation": _orientation,
-            "Chain": _chain,
-            "ETH": _unitPrice
+            "Name": "Mr. Krabs",
+            "Colorway": "Red & Blue",
+            "Orientation": "Vertical",
+            "Chain": "Ethereum",
+            "ETH": 0.005
         }
     NFTs.push(NFT4)
     }
 
 function mintNFT5 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT5 = {
-            "Name": _name,
-            "Colorway": _colorway,
-            "Orientation": _orientation,
-            "Chain": _chain,
-            "ETH": _unitPrice
+            "Name": "Plankton",
+            "Colorway": "Green & Yellow",
+            "Orientation": "Vertical",
+            "Chain": "Ethereum",
+            "ETH": 0.005
         }
     NFTs.push(NFT5)
     }
@@ -75,11 +74,11 @@ function mintNFT5 (_name, _colorway, _orientation, _chain, _unitPrice) {
 // and print their metadata with console.log()
 function listNFTs () {
     for (let i = 0; i < NFTs.length; i++) {
-        console.log("\nName: " + NFTs[i].Name);
-        console.log("\nColorway: " + NFTs[i].Colorway);
-        console.log("Orientation: " + NFTs[i].Orientation);
-        console.log("Chain: " + NFTs[i].Chain);
-        console.log("ETH: " + NFTs[i].ETH);
+        console.log("\nName: " + NFTs[i].Name)
+        console.log("\nColorway: " + NFTs[i].Colorway)
+        console.log("Orientation: " + NFTs[i].Orientation)
+        console.log("Chain: " + NFTs[i].Chain)
+        console.log("ETH: " + NFTs[i].ETH)
 }
 }
 
@@ -89,10 +88,12 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNFT1("SpongeBob", "Yellow & Brown", "Vertical", "Ethereum", 0.005);
-mintNFT2("Patrick", "Pink & Green", "Vertical", "Ethereum", 0.005);
-mintNFT3("Squidward", "Blue & Brown", "Vertical", "Ethereum", 0.005);
-mintNFT4("Mr. Krabs", "Red & Blue", "Vertical", "Ethereum", 0.005);
-mintNFT5("Plankton", "Green & Yellow", "Vertical", "Ethereum", 0.005);
+mintNFT1()
+mintNFT2()
+mintNFT3()
+mintNFT4()
+mintNFT5()
+
 listNFTs()
+
 getTotalSupply()
