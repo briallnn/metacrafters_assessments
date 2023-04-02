@@ -15,7 +15,7 @@ const NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT1 (_name, _colorway, _orientation, _chain, _unitPrice) {
+function mintNFT (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT1 = {
             "Name": "Spongebob",
             "Colorway": "Yellow & Brown",
@@ -23,52 +23,41 @@ function mintNFT1 (_name, _colorway, _orientation, _chain, _unitPrice) {
             "Chain":  "Ethereum",
             "ETH": 0.005
     }
-    NFTs.push(NFT1)
-    }
-
-function mintNFT2 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT2 = {
             "Name": "Patrick",
             "Colorway": "Pink & Green",
             "Orientation": "Vertical",
             "Chain": "Ethereum",
             "ETH": 0.005
-        }
-    NFTs.push(NFT2)
     }
-
-function mintNFT3 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT3 = {
             "Name": "Squiward",
             "Colorway": "Blue & Brown",
             "Orientation": "Vertical",
             "Chain": "Ethereum",
             "ETH": 0.005
-        }
-    NFTs.push(NFT3)
     }
-
-function mintNFT4 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT4 = {
             "Name": "Mr. Krabs",
             "Colorway": "Red & Blue",
             "Orientation": "Vertical",
             "Chain": "Ethereum",
             "ETH": 0.005
-        }
-    NFTs.push(NFT4)
     }
-
-function mintNFT5 (_name, _colorway, _orientation, _chain, _unitPrice) {
     let NFT5 = {
             "Name": "Plankton",
             "Colorway": "Green & Yellow",
             "Orientation": "Vertical",
             "Chain": "Ethereum",
             "ETH": 0.005
-        }
-    NFTs.push(NFT5)
     }
+        NFTs.push(NFT1)
+        NFTs.push(NFT2)
+        NFTs.push(NFT3)
+        NFTs.push(NFT4)
+        NFTs.push(NFT5)
+    }
+
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
@@ -88,11 +77,7 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNFT1()
-mintNFT2()
-mintNFT3()
-mintNFT4()
-mintNFT5()
+mintNFT()
 
 listNFTs()
 
