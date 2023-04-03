@@ -16,48 +16,16 @@ const NFTs = []
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
 function mintNFT (_name, _colorway, _orientation, _chain, _unitPrice) {
-    let NFT1 = {
-            "Name": "Spongebob",
-            "Colorway": "Yellow & Brown",
-            "Orientation": "Vertical",
-            "Chain":  "Ethereum",
-            "ETH": 0.005
+    let NFT = {
+            "Name": _name,
+            "Colorway": _colorway,
+            "Orientation": _orientation,
+            "Chain":  _chain,
+            "ETH": _unitPrice
     }
-    let NFT2 = {
-            "Name": "Patrick",
-            "Colorway": "Pink & Green",
-            "Orientation": "Vertical",
-            "Chain": "Ethereum",
-            "ETH": 0.005
+    NFTs.push(NFT)
     }
-    let NFT3 = {
-            "Name": "Squiward",
-            "Colorway": "Blue & Brown",
-            "Orientation": "Vertical",
-            "Chain": "Ethereum",
-            "ETH": 0.005
-    }
-    let NFT4 = {
-            "Name": "Mr. Krabs",
-            "Colorway": "Red & Blue",
-            "Orientation": "Vertical",
-            "Chain": "Ethereum",
-            "ETH": 0.005
-    }
-    let NFT5 = {
-            "Name": "Plankton",
-            "Colorway": "Green & Yellow",
-            "Orientation": "Vertical",
-            "Chain": "Ethereum",
-            "ETH": 0.005
-    }
-        NFTs.push(NFT1)
-        NFTs.push(NFT2)
-        NFTs.push(NFT3)
-        NFTs.push(NFT4)
-        NFTs.push(NFT5)
-    }
-
+        
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
@@ -77,7 +45,11 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNFT()
+mintNFT("Spongebob", "Yellow & Brown", "Vertical", "Ethereum", "0.005")
+mintNFT("Patrick", "Pink & Green", "Vertical", "Ethereum", "0.005")
+mintNFT("Squidward", "Blue & Brown", "Vertical", "Ethereum", "0.005")
+mintNFT("Mr. Krabs", "Red & Blue", "Vertical", "Ethereum", "0.005")
+mintNFT("Plankton", "Green & Yellow", "Vertical", "Ethereum", "0.005")
 
 listNFTs()
 
