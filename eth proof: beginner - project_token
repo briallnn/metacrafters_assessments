@@ -20,7 +20,7 @@ contract MyToken {
     // public variables here
     string public tokenName = "Blitz";
     string public tokenAbbrv = "BZ";
-    uint256 public totalSupply;
+    uint256 public totalSupply = 123;
     
     string public checking;
 
@@ -38,9 +38,9 @@ contract MyToken {
     function burn(address payable _sender, uint256 _amount) public returns(string memory) {
         totalSupply -= _amount;
         balances[_sender] -= _amount;
-        
+
         return balances[_sender] > _amount ? checking = "Right Amount!" : 
         balances[_sender] == _amount ? checking = "Right Amount!":
         checking = "Error Occured!";
-        }
+      }
 }
