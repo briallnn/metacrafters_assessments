@@ -40,7 +40,7 @@ contract MyToken {
         balances[_sender] -= _amount;
         
         return balances[_sender] > _amount ? myString = "It's just right!" : 
-        balances[_sender] == _amount ? myString = "It's ust right!":
+        balances[_sender] == _amount ? myString = "It's just right!":
         myString = "There's an error!";
         }
 }
