@@ -39,8 +39,8 @@ contract MyToken {
         totalSupply -= _amount;
         balances[_sender] -= _amount;
         
-        return balances[_sender] > _amount ? myString = "The sender's balance is greater!" : 
-        balances[_sender] == _amount ? myString = "The sender's balance is equal!":
-        myString = "Error!";
+        return balances[_sender] > _amount ? myString = "It's just right!" : 
+        balances[_sender] == _amount ? myString = "It's ust right!":
+        myString = "There's an error!";
         }
 }
