@@ -20,9 +20,9 @@ contract MyToken {
     // public variables here
     string public tokenName = "Blitz";
     string public tokenAbbrv = "BZ";
-    uint256 public totalSupply = 123;
+    uint256 public totalSupply;
     
-    string public myString;
+    string public checking;
 
     // mapping variable here
     mapping(address => uint256) public balances;
@@ -39,8 +39,8 @@ contract MyToken {
         totalSupply -= _amount;
         balances[_sender] -= _amount;
         
-        return balances[_sender] > _amount ? myString = "Right amount!" : 
-        balances[_sender] == _amount ? myString = "Right amount!":
-        myString = "There's an error!";
+        return balances[_sender] > _amount ? checking = "Right Amount!" : 
+        balances[_sender] == _amount ? checking = "Right Amount!":
+        checking = "Error Occured!";
         }
 }
